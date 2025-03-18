@@ -4,13 +4,13 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(158, 151, 151);
+  background-color: rgb(246, 245, 243, 1);
 }
 
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 2rem;
 }
 
 .row {
@@ -64,6 +64,21 @@ h4 {
   font-weight: 900;
 }
 
+.card-content {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.card-content ul li {
+  font-size: larger;
+  padding: 0.5rem 0;
+}
+
+.card-content ul .text-strong {
+  font-weight: 900;
+  font-size: larger;
+}
+
 footer {
   background-color: ;
 }
@@ -76,6 +91,17 @@ footer {
   h1 {
     text-align: left;
   }
+  .card-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+}
+
+.card-content ul li {
+  font-size: larger;
+  padding: 0.5rem 0;
+  padding-right: 2rem;
 }
 
 /* / sezione medium / tablet sopra i 768 px */
@@ -83,6 +109,15 @@ footer {
 /* sezione large / desktop sopra i 992 px */
 
 @media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+  .card-content ul {
+    display: inline-block;
+  }
+  .card-content {
+    margin-top: 80px;
+  }
 }
 
 /* sezione large / desktop sopra i 992 px */
