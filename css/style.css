@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 767px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -33,6 +33,10 @@ img {
 
 ul {
   list-style: none;
+}
+
+a {
+  color: white;
 }
 
 /* / reset */
@@ -66,7 +70,7 @@ main {
 
 /* sezione video */
 
-h4 {
+#video-section h4 {
   margin-left: 40px;
   font-size: larger;
   font-weight: 900;
@@ -146,8 +150,48 @@ h4 {
   display: none;
 }
 
+/* sezione presentation */
+
+h2 {
+  font-size: xxx-large;
+}
+
+.separator {
+  width: 100px;
+  height: 3px;
+  background-color: goldenrod;
+}
+
+.card-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* sezione header */
+
 footer {
-  background-color: ;
+  background-color: rgb(141, 95, 181);
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-title h4 {
+  display: inline-block;
+}
+
+.footer-menu nav a {
+  margin-right: 16px;
 }
 
 /* Sezione  MEDIA QUERE */
@@ -196,10 +240,13 @@ footer {
 
   .simbol-social {
   }
+
   /* sezione banner */
   .img-banner {
     display: block;
   }
+
+  /* sezione presentation */
 }
 
 /* / sezione medium / tablet sopra i 768 px */
