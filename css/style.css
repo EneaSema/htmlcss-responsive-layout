@@ -79,6 +79,41 @@ h4 {
   font-size: larger;
 }
 
+/*/ section video */
+
+/* section icone social */
+
+#social .container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#social .container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.simbol-social {
+  color: blue;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: larger;
+}
+
+.name-social {
+  display: none;
+}
+
 footer {
   background-color: ;
 }
@@ -87,10 +122,14 @@ footer {
 
 /* sezione medium / tablet sopra i 768 px */
 
+/* sezione header */
+
 @media screen and (min-width: 768px) {
   h1 {
     text-align: left;
   }
+
+  /* sezione video */
   .card-content ul {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +141,23 @@ footer {
   font-size: larger;
   padding: 0.5rem 0;
   padding-right: 2rem;
+}
+
+/* sezione icone */
+
+#social li {
+  width: 200px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: white;
+}
+
+.simbol-social {
+  color: blue;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: larger;
 }
 
 /* / sezione medium / tablet sopra i 768 px */
@@ -118,6 +174,19 @@ footer {
   .card-content {
     margin-top: 80px;
   }
+}
+
+/* sezione icone */
+
+#social li {
+  width: 200px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: white;
+}
+
+.name-social {
+  display: block;
 }
 
 /* sezione large / desktop sopra i 992 px */
