@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 767px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -50,6 +50,14 @@ h1 {
   padding: 32px;
 }
 
+.descrition-video {
+  display: block;
+}
+
+.text-hover {
+  display: none;
+}
+
 /* lavorazione main */
 
 main {
@@ -83,34 +91,58 @@ h4 {
 
 /* section icone social */
 
-#social .container ul {
+#social .container nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 30px;
 }
 
 #social .container ul li {
+}
+
+#social .container ul li .container-social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#social li {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
+.simbol-social {
+  font-size: xxx-large;
 }
 
-.simbol-social {
+.simbol-social.facebook {
   color: blue;
-  text-align: center;
-  margin-left: 8px;
-  margin-right: 8px;
-  font-size: larger;
+}
+
+.simbol-social.twitter {
+  color: rgb(0, 229, 255);
+}
+
+.simbol-social.instagram {
+  color: rgb(234, 93, 218);
+}
+
+.simbol-social.pinterest {
+  color: rgb(255, 0, 0);
+}
+.simbol-social.youtube {
+  color: rgb(255, 0, 0);
 }
 
 .name-social {
+  display: none;
+}
+
+/* /sezione icone */
+
+/* sezione banner */
+
+.img-banner {
   display: none;
 }
 
@@ -125,8 +157,16 @@ footer {
 /* sezione header */
 
 @media screen and (min-width: 768px) {
-  h1 {
+  .descrition-video {
+    display: block;
+  }
+  h2 {
     text-align: left;
+    display: inline-block;
+  }
+  .text-hover {
+    display: inline-block;
+    font-size: larger;
   }
 
   /* sezione video */
@@ -135,29 +175,31 @@ footer {
     flex-wrap: wrap;
     row-gap: 1rem;
   }
-}
 
-.card-content ul li {
-  font-size: larger;
-  padding: 0.5rem 0;
-  padding-right: 2rem;
-}
+  .card-content ul li {
+    font-size: larger;
+    padding: 0.5rem 0;
+    padding-right: 2rem;
+  }
 
-/* sezione icone */
+  /* sezione icone */
 
-#social li {
-  width: 200px;
-  height: 50px;
-  border-radius: 25%;
-  background-color: white;
-}
+  #social .container ul li .container-social {
+    width: 150px;
+    height: 50px;
+    border-radius: 33%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.simbol-social {
-  color: blue;
-  text-align: center;
-  margin-left: 8px;
-  margin-right: 8px;
-  font-size: larger;
+  .simbol-social {
+  }
+  /* sezione banner */
+  .img-banner {
+    display: block;
+  }
 }
 
 /* / sezione medium / tablet sopra i 768 px */
@@ -179,14 +221,6 @@ footer {
 /* sezione icone */
 
 #social li {
-  width: 200px;
-  height: 50px;
-  border-radius: 25%;
-  background-color: white;
-}
-
-.name-social {
-  display: block;
 }
 
 /* sezione large / desktop sopra i 992 px */
