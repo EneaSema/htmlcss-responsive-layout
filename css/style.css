@@ -1,0 +1,53 @@
+/* regole reset */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+[class*="col"] {
+  padding: -0.5rem;
+}
+
+col {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: yellow;
+}
+
+main {
+  background-color: yellow;
+}
+
+footer {
+  background-color: yellow;
+}
+
+/* Sezione  MEDIA QUERE */
+
+/* sezione medium / tablet sopra i 768 px */
+
+/* / sezione medium / tablet sopra i 768 px */
+
+/* sezione large / desktop sopra i 992 px */
+
+/* sezione large / desktop sopra i 992 px */
