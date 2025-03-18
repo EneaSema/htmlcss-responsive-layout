@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(158, 151, 151);
 }
 
 .container {
@@ -30,27 +31,30 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 /* / reset */
 
 /* lavorazione header */
 
 header {
-  background-color: rgb(255, 0, 255);
+  background-color: ;
 }
 
 h1 {
-  color: yellow;
   font-size: large;
   font-weight: 900;
   text-align: center;
 }
 
 main {
-  background-color: rgb(255, 174, 0);
+  background-color: ;
 }
 
 footer {
-  background-color: rgb(0, 255, 47);
+  background-color: ;
 }
 
 /* Sezione  MEDIA QUERE */
